@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Ola Mundo 1.0"
