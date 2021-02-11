@@ -3,6 +3,7 @@ package com.example.olamundo20;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,5 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         msg = (TextView) findViewById(R.id.msg);
+    }
+
+    public void clicou(View view) {
+        msg.setText("Olá, Mundo!");
     }
 }
