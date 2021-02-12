@@ -3,5 +3,5 @@
     <string name="nome">What\'s your name?</string>
     <string name="botao">Ready</string>
     <string name="resposta">Answer</string>
-    <string name="frase">Nice to meet you</string>
+    <string name="frase">"Nice to meet you, "</string>
 </resources>
