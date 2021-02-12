@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicou(View view) {
         String n = nome.getText().toString();
-        resposta.setText(R.string.frase  + n + "!");
+        String msg = getString(R.string.frase) + n + "!";
+        resposta.setText(msg);
     }
 }
