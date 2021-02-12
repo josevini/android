@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Escola v1.0</string>
+    <string name="strNota1">Nota 1</string>
+    <string name="strNota2">Nota 2</string>
+    <string name="strCalc">Calcular</string>
+</resources>
