@@ -4,4 +4,10 @@
     <string name="strNota1">Nota 1</string>
     <string name="strNota2">Nota 2</string>
     <string name="strCalc">Calcular</string>
+    <string name="strMedia">Média</string>
+    <string name="strSit">Situação</string>
+    <string name="strZero">0</string>
+    <string name="strSitAp">Aprovado</string>
+    <string name="strSitRp">Reprovado</string>
+    <string name="strSitRx">Recuperação</string>
 </resources>
