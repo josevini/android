@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Escola</string>
+    <string name="app_name">School v1.0</string>
+    <string name="strNota1">Grade 1</string>
+    <string name="strNota2">Grade 2</string>
+    <string name="strCalc">Calculate</string>
 </resources>
