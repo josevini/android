@@ -4,4 +4,5 @@
     <string name="nome">Qual é o seu nome?</string>
     <string name="botao">Pronto</string>
     <string name="resposta">Resposta</string>
+    <string name="frase">É um prazer te conhecer</string>
 </resources>
