@@ -2,6 +2,7 @@ package com.example.escola;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -43,10 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
             if (media < 5) {
                 txtSit.setText(getString(R.string.strSitRp));
+                txtSit.setTextColor(Color.parseColor("#7e1010"));
+                // txtSit.setTextColor(Color,getResources().getColor(R.color.cor))
             } else if (media < 7) {
                 txtSit.setText(getString(R.string.strSitRc));
+                txtSit.setTextColor(Color.parseColor("#21219c"));
             } else {
                 txtSit.setText(getString(R.string.strSitAp));
+                txtSit.setTextColor(Color.parseColor("#0e801b"));
             }
         } else {
 
