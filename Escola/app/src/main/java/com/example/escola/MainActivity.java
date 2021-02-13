@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText edtN1, edtN2;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             ok = false;
             edtN1.setError(getString(R.string.msgErro));
         }
-        if (edtN1.getText().toString().trim().isEmpty()) {
+        if (edtN2.getText().toString().trim().isEmpty()) {
             ok = false;
             edtN2.setError(getString(R.string.msgErro));
         }
@@ -41,17 +42,19 @@ public class MainActivity extends AppCompatActivity {
             float n2 = Float.parseFloat(edtN2.getText().toString());
             float media = (n1 + n2) / 2;
             txtM.setText(String.format("%.1f", media));
-
             if (media < 5) {
                 txtSit.setText(getString(R.string.strSitRp));
                 txtSit.setTextColor(Color.parseColor("#7e1010"));
-                // txtSit.setTextColor(Color,getResources().getColor(R.color.cor))
+                // Outra forma → txtSit.setTextColor(Color,getResources().getColor(R.color.cor));
+                Toast.makeText(getApplicationContext(), getString(R.string.msgRp), Toast.LENGTH_SHORT).show();
             } else if (media < 7) {
                 txtSit.setText(getString(R.string.strSitRc));
                 txtSit.setTextColor(Color.parseColor("#21219c"));
+                Toast.makeText(getApplicationContext(), getString(R.string.msgRc), Toast.LENGTH_SHORT).show();
             } else {
                 txtSit.setText(getString(R.string.strSitAp));
                 txtSit.setTextColor(Color.parseColor("#0e801b"));
+                Toast.makeText(getApplicationContext(), getString(R.string.msgAp), Toast.LENGTH_SHORT).show();
             }
         }
     }
