@@ -25,16 +25,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcular(View view) {
-        float n1 = Float.parseFloat(edtN1.getText().toString());
-        float n2 = Float.parseFloat(edtN2.getText().toString());
-        float media = (n1 + n2) / 2;
-        txtM.setText(String.format("%.1f", media));
-        if (media < 5) {
-            txtSit.setText(getString(R.string.strSitRp));
-        } else if (media < 7) {
-            txtSit.setText(getString(R.string.strSitRc));
+        boolean ok = true;
+        if (edtN1.getText().toString().trim().isEmpty()) {
+            ok = false;
+            edtN1.setError(getString(R.string.msgErro));
+        }
+        if (edtN1.getText().toString().trim().isEmpty()) {
+            ok = false;
+            edtN2.setError(getString(R.string.msgErro));
+        }
+
+        if (ok) {
+            float n1 = Float.parseFloat(edtN1.getText().toString());
+            float n2 = Float.parseFloat(edtN2.getText().toString());
+            float media = (n1 + n2) / 2;
+            txtM.setText(String.format("%.1f", media));
+
+            if (media < 5) {
+                txtSit.setText(getString(R.string.strSitRp));
+            } else if (media < 7) {
+                txtSit.setText(getString(R.string.strSitRc));
+            } else {
+                txtSit.setText(getString(R.string.strSitAp));
+            }
         } else {
-            txtSit.setText(getString(R.string.strSitAp));
+
         }
     }
 }
