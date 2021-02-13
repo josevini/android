@@ -9,7 +9,7 @@
     <string name="strZero">0</string>
     <string name="strSitAp">Aprovado</string>
     <string name="strSitRp">Reprovado</string>
-    <string name="strSitRx">Recuperação</string>
+    <string name="strSitRc">Recuperação</string>
     <string name="msgAp">Parabéns!</string>
     <string name="msgRc">Estude mais!</string>
     <string name="MsgRp">Tente novamente ano que vem!</string>
