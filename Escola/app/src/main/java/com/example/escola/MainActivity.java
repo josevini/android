@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 txtSit.setText(getString(R.string.strSitAp));
                 txtSit.setTextColor(Color.parseColor("#0e801b"));
             }
-        } else {
-
         }
     }
 }
