@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText edtN1, edtN2;
     TextView txtM, txtSit;
+    ImageView imgSit;
     LinearLayout layResult;
 
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         edtN2 = (EditText) findViewById(R.id.editN2);
         txtM = (TextView) findViewById(R.id.txtM);
         txtSit = (TextView) findViewById(R.id.txtSit);
+        imgSit = findViewById(R.id.imgSit);
     }
 
     public void calcular(View view) {
@@ -47,14 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 txtSit.setTextColor(Color.parseColor("#7e1010"));
                 // Outra forma → txtSit.setTextColor(Color,getResources().getColor(R.color.cor));
                 Toast.makeText(getApplicationContext(), getString(R.string.msgRp), Toast.LENGTH_SHORT).show();
+                imgSit.setImageResource(R.drawable.emojireprovado);
             } else if (media < 7) {
                 txtSit.setText(getString(R.string.strSitRc));
                 txtSit.setTextColor(Color.parseColor("#21219c"));
                 Toast.makeText(getApplicationContext(), getString(R.string.msgRc), Toast.LENGTH_SHORT).show();
+                imgSit.setImageResource(R.drawable.emojirecuperacao);
             } else {
                 txtSit.setText(getString(R.string.strSitAp));
                 txtSit.setTextColor(Color.parseColor("#0e801b"));
                 Toast.makeText(getApplicationContext(), getString(R.string.msgAp), Toast.LENGTH_SHORT).show();
+                imgSit.setImageResource(R.drawable.emojiaprovado);
             }
         }
     }
