@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (ok) {
             layResult.setVisibility(View.VISIBLE);
-            imm.hideSoftInputFromWindow(edtN1.getWindowToken(), 0); 
+            imm.hideSoftInputFromWindow(edtN1.getWindowToken(), 0);
             float n1 = Float.parseFloat(edtN1.getText().toString());
             float n2 = Float.parseFloat(edtN2.getText().toString());
             float media = (n1 + n2) / 2;
