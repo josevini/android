@@ -19,10 +19,47 @@
 
     <LinearLayout
         android:layout_width="177dp"
-        android:layout_height="213dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/btnEquipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicouEquipe"
+            android:text="@string/strEquipe"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCursos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicouCursos"
+            android:text="@string/strCursos"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnMidia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicouMidia"
+            android:text="@string/strMidia"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/strDireitos"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
