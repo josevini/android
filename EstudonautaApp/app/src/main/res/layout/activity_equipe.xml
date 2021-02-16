@@ -16,4 +16,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/magenta"
+        android:text="Button"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="585dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
