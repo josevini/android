@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clicouMidia(View view) {
-
+        tela = new Intent(getApplicationContext(), Midia.class);
+        startActivity(tela);
     }
 }
