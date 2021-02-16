@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EstudonautaApp">
-        <activity android:name=".Cursos"></activity>
+        <activity android:name=".Midia"></activity>
+        <activity android:name=".Cursos" />
         <activity android:name=".Equipe" />
         <activity android:name=".MainActivity">
             <intent-filter>
