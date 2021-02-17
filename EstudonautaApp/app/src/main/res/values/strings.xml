@@ -5,4 +5,6 @@
     <string name="strCursos">CURSOS</string>
     <string name="strMidia">Mídia</string>
     <string name="strVoltar">Voltar</string>
+    <string name="strEquipeTitulo">Equipe Estudonauta</string>
+    <string name="strEquipeDescicao">Aqui vai entrar a descrição...</string>
 </resources>
