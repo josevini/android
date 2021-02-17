@@ -9,10 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="93dp"
+        android:layout_width="95dp"
         android:layout_height="105dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
         android:contentDescription="@string/img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,16 +40,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnVerMaterias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:onClick="clickVerMaterias"
             android:text="Ver matérias"
-            android:textColor="@color/black" />
+            android:textColor="@color/ic_launcher_background" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_grey"
             android:text="Nova matéria"
             android:textColor="@color/black" />
     </LinearLayout>
