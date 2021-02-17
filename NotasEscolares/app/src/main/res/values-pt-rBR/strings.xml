@@ -2,6 +2,4 @@
 <resources>
     <string name="app_name">Escola</string>
     <string name="img">livro</string>
-    <string name="nova_materia">Nova Matéria</string>
-    <string name="materias">Matérias</string>
 </resources>
