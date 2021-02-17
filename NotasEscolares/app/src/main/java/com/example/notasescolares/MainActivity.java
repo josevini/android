@@ -21,4 +21,9 @@ public class MainActivity extends AppCompatActivity {
         tela = new Intent(getApplicationContext(), Materias.class);
         startActivity(tela);
     }
+
+    public void clickNovaMateria(View view) {
+        tela = new Intent(getApplicationContext(), NovaMateria.class);
+        startActivity(tela);
+    }
 }

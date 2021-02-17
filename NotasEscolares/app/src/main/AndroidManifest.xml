@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NotasEscolares">
-        <activity android:name=".Materias"></activity>
+        <activity android:name=".NovaMateria"></activity>
+        <activity android:name=".Materias" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
