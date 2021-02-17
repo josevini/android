@@ -49,11 +49,12 @@
             android:textColor="@color/ic_launcher_background" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btnNovaMateria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey"
             android:text="Nova matéria"
             android:textColor="@color/black" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
