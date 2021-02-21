@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">AppTeste</string>
     <string name="message">Olá, Mundo!</string>
+    <string name="button">Clique</string>
 </resources>
